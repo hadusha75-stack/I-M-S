@@ -21,7 +21,7 @@ app.use(middleware.handle(i18next));
     res.send(req.t("Testing"));
   });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const mongoose = require("mongoose");
 require("dotenv").config();
